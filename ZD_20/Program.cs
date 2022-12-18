@@ -1,0 +1,20 @@
+﻿int Ax, Ay, Az, Bx, By, Bz;
+Console.Write($"Введите координату x точки A:");
+int.TryParse(Console.ReadLine(), out Ax);
+Console.Write($"Введите координату y точки A:");
+int.TryParse(Console.ReadLine(), out Ay);
+Console.Write($"Введите координату z точки A:");
+int.TryParse(Console.ReadLine(), out Az);
+Console.Write($"Введите координату x точки B:");
+int.TryParse(Console.ReadLine(), out Bx);
+Console.Write($"Введите координату y точки B:");
+int.TryParse(Console.ReadLine(), out By);
+Console.Write($"Введите координату z точки B:");
+int.TryParse(Console.ReadLine(), out Bz);
+
+int x = (Bx - Ax) * (Bx - Ax);
+int y = (By - Ay) * (By - Ay);
+int z = (Bz - Az) * (Bz - Az);
+int xyz = x + y + z;
+double ans = Math.Sqrt(xyz);
+Console.Write($"Расстояние между двумя точками в 3D пространстве равно:{ans}");
